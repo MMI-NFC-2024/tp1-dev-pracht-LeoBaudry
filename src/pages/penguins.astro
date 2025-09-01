@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 import * as Plot from "@observablehq/plot";
 import PlotFigure from "../components/PlotFigure.astro";
 import penguins from "../assets/penguins.json";
@@ -14,5 +16,8 @@ const options = {
 };
 ---
 
-<h1>Penguins Scatter Plot with color</h1>
-<PlotFigure options={options} />
+<h1 class="plot-wrapper">Penguins Scatter Plot with color</h1>
+
+<div class="plot-wrapper">
+  <PlotFigure options={options} />
+</div>

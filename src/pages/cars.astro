@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+
+import PlotFigure from "../components/PlotFigure.astro";
+import * as Plot from "@observablehq/plot";
+import cars from "../assets/cars.json";
+
+const options = {
+  y: { grid: true },
+  marks: [
+    Plot.dot(cars, {
+      x: "economy (mpg)",
+      y: "power (hp)",
+      stroke: "cylinders",
+      title: d => `${d.name}\nCylinders: ${d.cylinders}\nWeight: ${d["weight (lb)"]} lb`
+    })
+  ]
+};
+---
+
+<h1>Voitures : Puissance vs Economie</h1>
+<PlotFigure options={options} />
+<a href="/">Retourner a l'accueil</a>

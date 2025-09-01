@@ -1,0 +1,50 @@
+/* Fond sombre global et styles de base */
+body {
+  background-color: #1e1e1e; /* gris foncé / presque noir */
+  font-family: Arial, sans-serif;
+  color: #eee; /* texte clair */
+  margin: 0;
+  padding: 2rem; /* padding global */
+  line-height: 1.6;
+}
+
+/* Titres */
+h1, h2 {
+  margin: 0 0 1rem 0; /* marge verticale */
+  padding: 0.5rem 0; /* padding interne */
+  color: #fff; /* titres plus visibles */
+}
+
+/* Paragraphes */
+p {
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+/* Liens */
+a {
+  color: #4aa3df; /* bleu clair */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Conteneur des graphiques */
+.plot-container {
+  margin: 2rem auto;
+  padding: 2rem; /* padding interne plus généreux */
+  max-width: 900px;
+  background-color: #2c2c2c; /* conteneur légèrement plus clair que le fond */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Wrapper pour centrer les graphiques */
+.plot-wrapper {
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement si le wrapper a une hauteur */
+  margin: 2rem auto;
+}
