@@ -1,0 +1,18 @@
+---
+import * as Plot from "@observablehq/plot";
+import PlotFigure from "../components/PlotFigure.astro";
+import penguins from "../assets/penguins.json";
+
+const options = {
+  marks: [
+    Plot.dot(penguins, {
+      x: "culmen_length_mm",
+      y: "culmen_depth_mm",
+      stroke: "species"
+    })
+  ]
+};
+---
+
+<h1>Penguins Scatter Plot with color</h1>
+<PlotFigure options={options} />

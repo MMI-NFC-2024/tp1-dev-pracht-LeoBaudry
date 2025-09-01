@@ -1,0 +1,17 @@
+---
+import * as Plot from "@observablehq/plot";
+import PlotFigure from "../components/PlotFigure.astro";
+import alphabet from "../assets/alphabet.json";
+
+const options = {
+  y: { grid: true, percent: true },
+  marks: [
+    Plot.ruleY([0]),
+    Plot.barY(alphabet, { x: "letter", y: "frequency", sort: { x: "y", reverse: true } })
+  ]
+};
+---
+
+<h1>Alphabet Bar Chart</h1>
+<PlotFigure options={options} />
+<a href="/">Retourner a l'accueil</a>

@@ -1,19 +1,9 @@
 ---
-import * as Plot from "@observablehq/plot";
-import PlotFigure from "../components/PlotFigure.astro";
-import penguins from "../assets/penguins.json";
-
-// Crée les marks directement avec les données
-const options = {
-  marks: [
-    Plot.dot(penguins, {
-      x: "culmen_length_mm",
-      y: "culmen_depth_mm",
-      stroke: "species"
-    })
-  ]
-};
 ---
 
-<h1>Penguins Scatter Plot with color</h1>
-<PlotFigure options={options} />
+<h1>Voici different graphiques</h1>
+<ul>
+  <li><a href="/penguins">Penguins Scatter Plot</a></li>
+  <li><a href="/citywages">City Wages Bar Chart</a></li>
+  <li><a href="/alphabet">Frequence d'apparition des lettres</a></li>
+</ul>
