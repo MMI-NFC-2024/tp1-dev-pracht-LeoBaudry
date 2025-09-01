@@ -50,3 +50,7 @@ a {
   font-weight: 600;
   text-decoration: none;
 }
+
+li {
+    list-style-type: none
+}

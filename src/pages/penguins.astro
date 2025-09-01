@@ -5,7 +5,7 @@ import * as Plot from "@observablehq/plot";
 import PlotFigure from "../components/PlotFigure.astro";
 import penguins from "../assets/penguins.json";
 
-const options = {
+const options1 = {
   marks: [
     Plot.dot(penguins, {
       x: "culmen_length_mm",
@@ -14,6 +14,8 @@ const options = {
     })
   ]
 };
+
+
 ---
 <head>
   <title>TP1 - Graphique penguins</title>
@@ -22,6 +24,7 @@ const options = {
 <h1 class="plot-wrapper">Penguins Scatter Plot - En couleurs</h1>
 
 <div class="plot-wrapper">
-  <PlotFigure options={options} />
+  <PlotFigure options={options1} />
 </div>
 <a class="plot-wrapper" href="/">Retourner a l'accueil</a>
+
